@@ -1,0 +1,31 @@
+C:\Users\afgarcia\documents\visual studio 2010\Projects\formaparatutorial\formaparatutorial\bin\Debug\formaparatutorial.exe
+C:\Users\afgarcia\documents\visual studio 2010\Projects\formaparatutorial\formaparatutorial\bin\Debug\formaparatutorial.pdb
+C:\Users\afgarcia\documents\visual studio 2010\Projects\formaparatutorial\formaparatutorial\bin\Debug\formaparatutorial.xml
+C:\Users\afgarcia\documents\visual studio 2010\Projects\formaparatutorial\formaparatutorial\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\afgarcia\documents\visual studio 2010\Projects\formaparatutorial\formaparatutorial\obj\x86\Debug\WindowsApplication1.Form1.resources
+C:\Users\afgarcia\documents\visual studio 2010\Projects\formaparatutorial\formaparatutorial\obj\x86\Debug\WindowsApplication1.Resources.resources
+C:\Users\afgarcia\documents\visual studio 2010\Projects\formaparatutorial\formaparatutorial\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\afgarcia\documents\visual studio 2010\Projects\formaparatutorial\formaparatutorial\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\afgarcia\documents\visual studio 2010\Projects\formaparatutorial\formaparatutorial\obj\x86\Debug\formaparatutorial.exe
+C:\Users\afgarcia\documents\visual studio 2010\Projects\formaparatutorial\formaparatutorial\obj\x86\Debug\formaparatutorial.xml
+C:\Users\afgarcia\documents\visual studio 2010\Projects\formaparatutorial\formaparatutorial\obj\x86\Debug\formaparatutorial.pdb
+C:\Users\Jonathan\Desktop\codigotutorial-master\codigotutorial-master\formaparatutorial\formaparatutorial\obj\x86\Debug\formaparatutorial.exe
+C:\Users\Jonathan\Desktop\codigotutorial-master\codigotutorial-master\formaparatutorial\formaparatutorial\obj\x86\Debug\formaparatutorial.xml
+C:\Users\Jonathan\Desktop\codigotutorial-master\codigotutorial-master\formaparatutorial\formaparatutorial\obj\x86\Debug\formaparatutorial.pdb
+C:\Users\Jonathan\Desktop\codigotutorial-master\codigotutorial-master\formaparatutorial\formaparatutorial\bin\Debug\formaparatutorial.exe
+C:\Users\Jonathan\Desktop\codigotutorial-master\codigotutorial-master\formaparatutorial\formaparatutorial\bin\Debug\formaparatutorial.pdb
+C:\Users\Jonathan\Desktop\codigotutorial-master\codigotutorial-master\formaparatutorial\formaparatutorial\bin\Debug\formaparatutorial.xml
+C:\Users\Jonathan\Desktop\codigotutorial-master\codigotutorial-master\formaparatutorial\formaparatutorial\obj\x86\Debug\formaparatutorial.vbprojResolveAssemblyReference.cache
+C:\Users\Jonathan\Desktop\codigotutorial-master\codigotutorial-master\formaparatutorial\formaparatutorial\obj\x86\Debug\WindowsApplication1.Resources.resources
+C:\Users\Jonathan\Desktop\codigotutorial-master\codigotutorial-master\formaparatutorial\formaparatutorial\obj\x86\Debug\formaparatutorial.vbproj.GenerateResource.Cache
+C:\Users\Jonathan\Desktop\codigotutorial-master\codigotutorial-master\formaparatutorial\formaparatutorial\obj\x86\Debug\WindowsApplication1.D4.resources
+C:\Users\Jonathan\Documents\GitHub\D4\formaparatutorial\formaparatutorial\obj\x86\Debug\formaparatutorial.exe
+C:\Users\Jonathan\Documents\GitHub\D4\formaparatutorial\formaparatutorial\obj\x86\Debug\formaparatutorial.xml
+C:\Users\Jonathan\Documents\GitHub\D4\formaparatutorial\formaparatutorial\obj\x86\Debug\formaparatutorial.pdb
+C:\Users\Jonathan\Documents\GitHub\D4\formaparatutorial\formaparatutorial\bin\Debug\formaparatutorial.exe
+C:\Users\Jonathan\Documents\GitHub\D4\formaparatutorial\formaparatutorial\bin\Debug\formaparatutorial.pdb
+C:\Users\Jonathan\Documents\GitHub\D4\formaparatutorial\formaparatutorial\bin\Debug\formaparatutorial.xml
+C:\Users\Jonathan\Documents\GitHub\D4\formaparatutorial\formaparatutorial\obj\x86\Debug\formaparatutorial.vbprojResolveAssemblyReference.cache
+C:\Users\Jonathan\Documents\GitHub\D4\formaparatutorial\formaparatutorial\obj\x86\Debug\WindowsApplication1.D4.resources
+C:\Users\Jonathan\Documents\GitHub\D4\formaparatutorial\formaparatutorial\obj\x86\Debug\WindowsApplication1.Resources.resources
+C:\Users\Jonathan\Documents\GitHub\D4\formaparatutorial\formaparatutorial\obj\x86\Debug\formaparatutorial.vbproj.GenerateResource.Cache
