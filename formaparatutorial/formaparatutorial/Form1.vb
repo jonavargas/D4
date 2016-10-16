@@ -9,7 +9,7 @@ Public Class D4
         Dim Documento As Word.Document
 
         MsgBox("El TDR se guardará en : C:\Users\Jonathan\Desktop\salida.doc")
-        FileCopy("C:\documento.doc", "C:\Users\Jonathan\Desktop\salida.doc")
+        FileCopy("D:\documento.doc", "C:\Users\Jonathan\Desktop\salida.doc")
         Documento = MSWord.Documents.Open("C:\Users\Jonathan\Desktop\salida.doc")
 
         Documento.Bookmarks.Item("cliente").Range.Text = " " + txtCliente.Text
@@ -30,42 +30,82 @@ Public Class D4
         Documento.Bookmarks.Item("CDiente").Range.Text = " " + txtCrestaDiente.Text
         Documento.Bookmarks.Item("ADiente").Range.Text = " " + txtAlturaDiente.Text
         Documento.Bookmarks.Item("fecha").Range.Text = " " + txtFecha.Text
-        'Documento.Bookmarks.Item("fresadora").Range.Text = " " + txtModuloOblicuo.Text
-        'Documento.Bookmarks.Item("Pfresador").Range.Text = " " + txtModuloOblicuo.Text
-        'Documento.Bookmarks.Item("A1").Range.Text = " " + txtModuloOblicuo.Text
-        'Documento.Bookmarks.Item("A").Range.Text = " " + txtModuloOblicuo.Text
-        'Documento.Bookmarks.Item("plato").Range.Text = " " + txtModuloOblicuo.Text
-        'Documento.Bookmarks.Item("vueltas").Range.Text = " " + txtModuloOblicuo.Text
 
-        'Documento.Bookmarks.Item("huecos").Range.Text = " " + txtModuloOblicuo.Text
-        'Documento.Bookmarks.Item("CGrueso").Range.Text = " " + txtModuloOblicuo.Text
-        'Documento.Bookmarks.Item("ESFin").Range.Text = " " + txtModuloOblicuo.Text
-        'Documento.Bookmarks.Item("DLlanta").Range.Text = " " + txtModuloOblicuo.Text
-        'Documento.Bookmarks.Item("ALaterales").Range.Text = " " + txtModuloOblicuo.Text
-        'Documento.Bookmarks.Item("ALlanta").Range.Text = " " + txtModuloOblicuo.Text
-        'Documento.Bookmarks.Item("RTransmision").Range.Text = " " + txtModuloOblicuo.Text
-        'Documento.Bookmarks.Item("tornillo").Range.Text = " " + txtModuloOblicuo.Text
-        'Documento.Bookmarks.Item("aparato").Range.Text = " " + txtModuloOblicuo.Text
-        'Documento.Bookmarks.Item("intermedios").Range.Text = " " + txtModuloOblicuo.Text
-        'Documento.Bookmarks.Item("N1").Range.Text = " " + txtModuloOblicuo.Text
+        Documento.Bookmarks.Item("fresadora").Range.Text = " " + txtFresadora.Text
+        Documento.Bookmarks.Item("Pfresador").Range.Text = " " + txtPasoFresadora.Text
+        Documento.Bookmarks.Item("A1").Range.Text = " " + txt40A1.Text
+        Documento.Bookmarks.Item("A").Range.Text = " " + txtA.Text
+        Documento.Bookmarks.Item("plato").Range.Text = " " + txtPlato.Text
+        Documento.Bookmarks.Item("vueltas").Range.Text = " " + txtVueltas.Text
 
-        'Documento.Bookmarks.Item("N2").Range.Text = " " + txtModuloOblicuo.Text
-        'Documento.Bookmarks.Item("b").Range.Text = " " + txtModuloOblicuo.Text
-        'Documento.Bookmarks.Item("c").Range.Text = " " + txtModuloOblicuo.Text
+        Documento.Bookmarks.Item("huecos").Range.Text = " " + txtHueco.Text
+        Documento.Bookmarks.Item("CGrueso").Range.Text = " " + txtCoronaGrueso.Text
+        Documento.Bookmarks.Item("ESFin").Range.Text = " " + txtESFin.Text
+        Documento.Bookmarks.Item("DLlanta").Range.Text = " " + txtDiametroLlanta.Text
+        Documento.Bookmarks.Item("ALaterales").Range.Text = " " + txtAnguloLaterales.Text
+        Documento.Bookmarks.Item("ALlanta").Range.Text = " " + txtAnchoLlanta.Text
+        Documento.Bookmarks.Item("RTransmision").Range.Text = " " + txtRelacionTransmicion.Text
+        Documento.Bookmarks.Item("tornillo").Range.Text = " " + txtTornilloA.Text
+        Documento.Bookmarks.Item("aparato").Range.Text = " " + txtAparatoD.Text
+        Documento.Bookmarks.Item("intermedios").Range.Text = " " + txtIntermedio1.Text
+        Documento.Bookmarks.Item("N1").Range.Text = " " + txtModuloOblicuo.Text
+
+        Documento.Bookmarks.Item("N2").Range.Text = " " + txtIntemedio2.Text
+        Documento.Bookmarks.Item("b").Range.Text = " " + txtIntemedioB.Text
+        Documento.Bookmarks.Item("c").Range.Text = " " + txtIntemedioC.Text
         Documento.Bookmarks.Item("hecho").Range.Text = " " + txtHechoPor.Text
         Documento.Bookmarks.Item("observaciones").Range.Text = " " + txtObservaciones.Text
-
-        'Documento.Range().Font.Bold = False
 
         Documento.Save()
         MSWord.Visible = True
     End Sub
-
-    Private Sub D4_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+    Private Sub Button1_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+        Call Limpiar_Cajas(Me)
+        txtCliente.Focus()
     End Sub
 
-    Private Sub TabPage1_Click(sender As Object, e As EventArgs) Handles TabPage1.Click
+    Private Sub Limpiar_Cajas(ByVal f As Form)
+        txtCliente.Clear()
+        txtModulo.Clear()
+        txtPaso.Clear()
+        txtModuloOblicuo.Clear()
+        txtNumFresa.Clear()
+        txtNumDientes.Clear()
+        txtTipoEngranaje.Clear()
+        txtDiametroExterior.Clear()
+        txtDiametroPrimitivo.Clear()
+        txtDiametroFondo.Clear()
+        txtCATorno.Clear()
+        txtAPrimitivo.Clear()
+        txtAFondo.Clear()
+        txtHAngulo.Clear()
+        txtHelice.Clear()
+        txtCrestaDiente.Clear()
+        txtAlturaDiente.Clear()
 
+        txtFresadora.Clear()
+        txtPasoFresadora.Clear()
+        txt40A1.Clear()
+        txtA.Clear()
+        txtPlato.Clear()
+        txtVueltas.Clear()
+
+        txtHueco.Clear()
+        txtCoronaGrueso.Clear()
+        txtESFin.Clear()
+        txtDiametroLlanta.Clear()
+        txtAnguloLaterales.Clear()
+        txtAnchoLlanta.Clear()
+        txtRelacionTransmicion.Clear()
+        txtTornilloA.Clear()
+        txtAparatoD.Clear()
+        txtIntermedio1.Clear()
+        txtModuloOblicuo.Clear()
+
+        txtIntemedio2.Clear()
+        txtIntemedioB.Clear()
+        txtIntemedioC.Clear()
+        txtHechoPor.Clear()
+        txtObservaciones.Clear()
     End Sub
 End Class
