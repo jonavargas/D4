@@ -37,6 +37,11 @@ Partial Class D4
         Me.lblNFresa = New System.Windows.Forms.Label()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.tabDatos1 = New System.Windows.Forms.TabPage()
+        Me.lblNombreDocumento = New System.Windows.Forms.Label()
+        Me.txtNombreDocumento = New System.Windows.Forms.TextBox()
+        Me.txtUbicacion = New System.Windows.Forms.TextBox()
+        Me.BtnBuscarUbicacion = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.lblFecha = New System.Windows.Forms.Label()
         Me.lblCDiente = New System.Windows.Forms.Label()
         Me.txtCrestaDiente = New System.Windows.Forms.TextBox()
@@ -64,6 +69,8 @@ Partial Class D4
         Me.lvlTEngranaje = New System.Windows.Forms.Label()
         Me.txtDiametroFondo = New System.Windows.Forms.TextBox()
         Me.tabDatos2 = New System.Windows.Forms.TabPage()
+        Me.lblHechoPor = New System.Windows.Forms.Label()
+        Me.txtHechoPor = New System.Windows.Forms.TextBox()
         Me.txtObservaciones = New System.Windows.Forms.RichTextBox()
         Me.lblObservaciones = New System.Windows.Forms.Label()
         Me.txtIntemedioC = New System.Windows.Forms.TextBox()
@@ -106,14 +113,11 @@ Partial Class D4
         Me.txtPasoFresadora = New System.Windows.Forms.TextBox()
         Me.lblFecha2 = New System.Windows.Forms.Label()
         Me.fecha = New System.Windows.Forms.DateTimePicker()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.lblHechoPor = New System.Windows.Forms.Label()
-        Me.txtHechoPor = New System.Windows.Forms.TextBox()
         Me.TabControl1.SuspendLayout()
         Me.tabDatos1.SuspendLayout()
-        Me.tabDatos2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.tabDatos2.SuspendLayout()
         Me.SuspendLayout()
         '
         'btnGuardar
@@ -133,6 +137,7 @@ Partial Class D4
         Me.txtCliente.Name = "txtCliente"
         Me.txtCliente.Size = New System.Drawing.Size(216, 20)
         Me.txtCliente.TabIndex = 1
+        Me.txtCliente.Tag = ""
         '
         'txtModulo
         '
@@ -140,6 +145,7 @@ Partial Class D4
         Me.txtModulo.Name = "txtModulo"
         Me.txtModulo.Size = New System.Drawing.Size(74, 20)
         Me.txtModulo.TabIndex = 2
+        Me.txtModulo.Tag = ""
         '
         'txtPaso
         '
@@ -235,6 +241,10 @@ Partial Class D4
         'tabDatos1
         '
         Me.tabDatos1.BackColor = System.Drawing.Color.Gainsboro
+        Me.tabDatos1.Controls.Add(Me.lblNombreDocumento)
+        Me.tabDatos1.Controls.Add(Me.txtNombreDocumento)
+        Me.tabDatos1.Controls.Add(Me.txtUbicacion)
+        Me.tabDatos1.Controls.Add(Me.BtnBuscarUbicacion)
         Me.tabDatos1.Controls.Add(Me.PictureBox1)
         Me.tabDatos1.Controls.Add(Me.lblFecha)
         Me.tabDatos1.Controls.Add(Me.lblCDiente)
@@ -278,6 +288,51 @@ Partial Class D4
         Me.tabDatos1.Size = New System.Drawing.Size(686, 482)
         Me.tabDatos1.TabIndex = 0
         Me.tabDatos1.Text = "Datos 1"
+        '
+        'lblNombreDocumento
+        '
+        Me.lblNombreDocumento.AutoSize = True
+        Me.lblNombreDocumento.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblNombreDocumento.Location = New System.Drawing.Point(35, 349)
+        Me.lblNombreDocumento.Name = "lblNombreDocumento"
+        Me.lblNombreDocumento.Size = New System.Drawing.Size(145, 16)
+        Me.lblNombreDocumento.TabIndex = 51
+        Me.lblNombreDocumento.Text = "Nombre Documento"
+        '
+        'txtNombreDocumento
+        '
+        Me.txtNombreDocumento.Location = New System.Drawing.Point(189, 345)
+        Me.txtNombreDocumento.Name = "txtNombreDocumento"
+        Me.txtNombreDocumento.Size = New System.Drawing.Size(134, 20)
+        Me.txtNombreDocumento.TabIndex = 50
+        '
+        'txtUbicacion
+        '
+        Me.txtUbicacion.Enabled = False
+        Me.txtUbicacion.Location = New System.Drawing.Point(38, 398)
+        Me.txtUbicacion.Name = "txtUbicacion"
+        Me.txtUbicacion.ReadOnly = True
+        Me.txtUbicacion.Size = New System.Drawing.Size(285, 20)
+        Me.txtUbicacion.TabIndex = 49
+        '
+        'BtnBuscarUbicacion
+        '
+        Me.BtnBuscarUbicacion.Location = New System.Drawing.Point(36, 369)
+        Me.BtnBuscarUbicacion.Name = "BtnBuscarUbicacion"
+        Me.BtnBuscarUbicacion.Size = New System.Drawing.Size(90, 23)
+        Me.BtnBuscarUbicacion.TabIndex = 48
+        Me.BtnBuscarUbicacion.Text = "Seleccionar"
+        Me.BtnBuscarUbicacion.UseVisualStyleBackColor = True
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(365, 303)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(302, 177)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 47
+        Me.PictureBox1.TabStop = False
         '
         'lblFecha
         '
@@ -554,6 +609,23 @@ Partial Class D4
         Me.tabDatos2.Size = New System.Drawing.Size(686, 482)
         Me.tabDatos2.TabIndex = 1
         Me.tabDatos2.Text = "Datos 2"
+        '
+        'lblHechoPor
+        '
+        Me.lblHechoPor.AutoSize = True
+        Me.lblHechoPor.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblHechoPor.Location = New System.Drawing.Point(22, 327)
+        Me.lblHechoPor.Name = "lblHechoPor"
+        Me.lblHechoPor.Size = New System.Drawing.Size(81, 16)
+        Me.lblHechoPor.TabIndex = 87
+        Me.lblHechoPor.Text = "Hecho Por"
+        '
+        'txtHechoPor
+        '
+        Me.txtHechoPor.Location = New System.Drawing.Point(113, 323)
+        Me.txtHechoPor.Name = "txtHechoPor"
+        Me.txtHechoPor.Size = New System.Drawing.Size(224, 20)
+        Me.txtHechoPor.TabIndex = 43
         '
         'txtObservaciones
         '
@@ -914,16 +986,6 @@ Partial Class D4
         Me.fecha.Size = New System.Drawing.Size(197, 20)
         Me.fecha.TabIndex = 33
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(183, 300)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(302, 177)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 47
-        Me.PictureBox1.TabStop = False
-        '
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -933,23 +995,6 @@ Partial Class D4
         Me.Button1.TabIndex = 20
         Me.Button1.Text = "Limpiar"
         Me.Button1.UseVisualStyleBackColor = True
-        '
-        'lblHechoPor
-        '
-        Me.lblHechoPor.AutoSize = True
-        Me.lblHechoPor.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblHechoPor.Location = New System.Drawing.Point(22, 327)
-        Me.lblHechoPor.Name = "lblHechoPor"
-        Me.lblHechoPor.Size = New System.Drawing.Size(81, 16)
-        Me.lblHechoPor.TabIndex = 87
-        Me.lblHechoPor.Text = "Hecho Por"
-        '
-        'txtHechoPor
-        '
-        Me.txtHechoPor.Location = New System.Drawing.Point(113, 323)
-        Me.txtHechoPor.Name = "txtHechoPor"
-        Me.txtHechoPor.Size = New System.Drawing.Size(224, 20)
-        Me.txtHechoPor.TabIndex = 43
         '
         'D4
         '
@@ -968,9 +1013,9 @@ Partial Class D4
         Me.TabControl1.ResumeLayout(False)
         Me.tabDatos1.ResumeLayout(False)
         Me.tabDatos1.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.tabDatos2.ResumeLayout(False)
         Me.tabDatos2.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1062,4 +1107,8 @@ Partial Class D4
     Friend WithEvents Button1 As Button
     Friend WithEvents lblHechoPor As Label
     Friend WithEvents txtHechoPor As TextBox
+    Friend WithEvents BtnBuscarUbicacion As Button
+    Friend WithEvents lblNombreDocumento As Label
+    Friend WithEvents txtNombreDocumento As TextBox
+    Friend WithEvents txtUbicacion As TextBox
 End Class

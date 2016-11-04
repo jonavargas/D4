@@ -7,10 +7,11 @@ Public Class D4
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnGuardar.Click
         Dim MSWord As New Word.Application
         Dim Documento As Word.Document
-
-        MsgBox("El TDR se guardará en : C:\Users\Jonathan\Desktop\salida.doc")
-        FileCopy("D:\documento.doc", "C:\Users\Jonathan\Desktop\salida.doc")
-        Documento = MSWord.Documents.Open("C:\Users\Jonathan\Desktop\salida.doc")
+        Dim directorioPlantilla As String = Directory.GetCurrentDirectory() & "\PlantillaWord\documento.doc"
+        Dim rutaNombreDocumentoFinalDestino = txtUbicacion.Text
+        'FileCopy(directorioPlantilla, "C:\Users\Jonathan\Desktop\salida.doc")
+        FileCopy(directorioPlantilla, rutaNombreDocumentoFinalDestino)
+        Documento = MSWord.Documents.Open(rutaNombreDocumentoFinalDestino)
 
         Documento.Bookmarks.Item("cliente").Range.Text = " " + txtCliente.Text
         Documento.Bookmarks.Item("modulo").Range.Text = " " + txtModulo.Text
@@ -56,8 +57,34 @@ Public Class D4
         Documento.Bookmarks.Item("hecho").Range.Text = " " + txtHechoPor.Text
         Documento.Bookmarks.Item("observaciones").Range.Text = " " + txtObservaciones.Text
 
-        Documento.Save()
-        MSWord.Visible = True
+
+        Dim documentoExiste As Boolean
+        documentoExiste = System.IO.File.Exists(rutaNombreDocumentoFinalDestino)
+
+        If documentoExiste = True Then
+            MsgBox("El documento ya existe: " & rutaNombreDocumentoFinalDestino)
+
+        Else
+
+
+            Documento.Save()
+            MsgBox("El documento se guardo en: " & rutaNombreDocumentoFinalDestino)
+            MSWord.Visible = True
+
+        End If
+
+
+        If txtUbicacion.Text = "" Then
+            Dim oControl As Control
+            For Each oControl In Me.TabControl1.Controls
+                If oControl.Tag Is "1" Then
+                    oControl.Enabled = False
+                End If
+            Next
+        End If
+
+
+
     End Sub
     Private Sub Button1_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         Call Limpiar_Cajas(Me)
@@ -107,5 +134,49 @@ Public Class D4
         txtIntemedioC.Clear()
         txtHechoPor.Clear()
         txtObservaciones.Clear()
+
+        txtUbicacion.Clear()
+        txtNombreDocumento.Clear()
+
+
+    End Sub
+
+    Private Sub BtnBuscarUbicacion_Click(sender As Object, e As EventArgs) Handles BtnBuscarUbicacion.Click
+
+        Dim dialog = New FolderBrowserDialog()
+        Dim directorioPorDefecto As String = "C:\Documentos de datos generales"
+        Dim nombreDocumento = txtNombreDocumento.Text
+        Dim ubicacionDestino = ""
+
+
+        'Dim documentoExiste As Boolean
+        'documentoExiste = System.IO.File.Exists(ubicacionDestino)
+
+
+        If DialogResult.OK = dialog.ShowDialog() Then
+
+
+            If nombreDocumento IsNot "" Then
+                nombreDocumento = nombreDocumento & ".doc"
+            Else
+                nombreDocumento = "documento" & ".doc"
+            End If
+
+            'If txtUbicacion.Text IsNot "" Then
+            txtUbicacion.Text = dialog.SelectedPath & "\" & nombreDocumento
+            ubicacionDestino = txtUbicacion.Text
+
+            'Else
+            '    txtUbicacion.Text = directorioPorDefecto & "\" & nombreDocumento
+            '    ubicacionDestino = txtUbicacion.Text
+            '    MsgBox("El documento se guardo en: " & ubicacionDestino)
+            'End If
+
+
+        End If
+
+
+
+
     End Sub
 End Class
