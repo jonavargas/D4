@@ -1,0 +1,10 @@
+C:\Users\Jonathan\Documents\GitHub\D4\formaparatutorial\formaparatutorial\bin\Release\formaparatutorial.exe
+C:\Users\Jonathan\Documents\GitHub\D4\formaparatutorial\formaparatutorial\bin\Release\formaparatutorial.pdb
+C:\Users\Jonathan\Documents\GitHub\D4\formaparatutorial\formaparatutorial\bin\Release\formaparatutorial.xml
+C:\Users\Jonathan\Documents\GitHub\D4\formaparatutorial\formaparatutorial\obj\x86\Release\formaparatutorial.vbprojResolveAssemblyReference.cache
+C:\Users\Jonathan\Documents\GitHub\D4\formaparatutorial\formaparatutorial\obj\x86\Release\WindowsApplication1.D4.resources
+C:\Users\Jonathan\Documents\GitHub\D4\formaparatutorial\formaparatutorial\obj\x86\Release\WindowsApplication1.Resources.resources
+C:\Users\Jonathan\Documents\GitHub\D4\formaparatutorial\formaparatutorial\obj\x86\Release\formaparatutorial.vbproj.GenerateResource.Cache
+C:\Users\Jonathan\Documents\GitHub\D4\formaparatutorial\formaparatutorial\obj\x86\Release\formaparatutorial.exe
+C:\Users\Jonathan\Documents\GitHub\D4\formaparatutorial\formaparatutorial\obj\x86\Release\formaparatutorial.xml
+C:\Users\Jonathan\Documents\GitHub\D4\formaparatutorial\formaparatutorial\obj\x86\Release\formaparatutorial.pdb
